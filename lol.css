@@ -2,13 +2,13 @@
     position: relative;
     left: 100px;
     width: 500px;
-    height: 300px;
+    height: 500px;
     border: 5px black solid;
     background-color: #EEE;
     cursor: pointer;
 }
 
-#thing {
+#paddle {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -21,6 +21,20 @@
     background-color: red;
 }
 
-#thing:active {
+#paddle:active {
     transform: scale(3);
 }
+canvas.border {
+    border-style: solid;
+    border-width: 5px;
+}
+#thing {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 225px;
+    top: 125px;
+    background-color: green;
+    transition: transition: transform .2s, background .5s, left .5s ease-in-out, top .5s ease-in-out;
+}
+
